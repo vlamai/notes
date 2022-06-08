@@ -1,1 +1,2 @@
 [[array]]   
+some text 
