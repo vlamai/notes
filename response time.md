@@ -1,0 +1,1 @@
+total time required for the computer to execute the task, including disk/memory access. I/O activities, OS overhead, CPU execution time etc.
