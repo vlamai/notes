@@ -1,3 +1,5 @@
 [[golang gctrace]]
 
-[[golang data race]] ^0d7790
+[[golang data race]] ^golang-data-race
+
+[[_articles#^go-array-time-complexity]]

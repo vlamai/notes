@@ -2,9 +2,8 @@
 
 
 # time complexity 
-
 ^time-complexity
-
+What time it cost to execute in worse case 
 symbol | description
 ---|---
 O(1)| constant
@@ -16,8 +15,9 @@ O(2^n) | exponential
 O(n!)| factorial
 
 # space complexity
-
 ^space-complexity
+
+What additional space function allocate 
 
 what causes :
 - variables 
@@ -28,7 +28,7 @@ what causes :
 
 --- 
 
-images from [[_articles#^a7d29c]]
+images from [[_articles#^big-o-cheat-sheet-site]]
 
 ![[Common Data Structure Operations.png]]
 

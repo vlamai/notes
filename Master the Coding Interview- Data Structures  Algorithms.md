@@ -2,7 +2,7 @@
 
 # [[big o]]
 # time
-[[big o#^5c946b]]
+[[big o#^time-complexity]]
 
 
 ![[Big-O Complexity Chart.png]]
@@ -30,7 +30,12 @@ $$ O (n+m) \lor O (n*m)$$ depend on function realization . + for operations in o
 $$O (100 + 3n + n^2) \Rightarrow O (n^2)$$
 
 ## space 
-[[big o#^371546]]
+[[big o#^space-complexity]]
+
+
+# [[_data structures]]
+
+## [[_data structures#^array]]
 
 
 
