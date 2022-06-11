@@ -95,7 +95,7 @@ slice := data[1:4:5]  // [low:high:max]
 
 The slicing operation has three parameters, low, high and Max, and three parameters of the newly generated slice structure. The pointer array points to the position where the subscript of the underlying array element of the original slice is low, len = high – low, cap = max – low. As shown in the figure below:
 
-![切片操作示意图](https://imgs.developpaper.com/imgs/682961-20200220172431256-1509936359.png "Go language slice detailed explanation (combined with source code)")
+![reslice](img/reslice.png)
 
 **The main thing to pay attention to in slicing operation is that it is within the allowable range of the original slice capacity. If it exceeds the capacity range, a panic will be reported**。
 
