@@ -2,7 +2,7 @@
 
 # [[big o]]
 # time
-
+[[big o#^5c946b]]
 
 
 ![[Big-O Complexity Chart.png]]
@@ -30,12 +30,7 @@ $$ O (n+m) \lor O (n*m)$$ depend on function realization . + for operations in o
 $$O (100 + 3n + n^2) \Rightarrow O (n^2)$$
 
 ## space 
-
-what causes :
-- variables 
-- data structures 
-- functions call 
-- allocations 
+[[big o#^371546]]
 
 
 

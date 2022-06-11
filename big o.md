@@ -1,6 +1,9 @@
 
 
 
+# time complexity 
+
+^time-complexity
 
 symbol | description
 ---|---
@@ -12,7 +15,18 @@ O(n^2)| quadratic
 O(2^n) | exponential 
 O(n!)| factorial
 
+# space complexity
 
+^space-complexity
+
+what causes :
+- variables 
+- data structures 
+- functions call 
+- allocations 
+
+
+--- 
 
 images from [[_articles#^a7d29c]]
 
@@ -24,7 +38,7 @@ images from [[_articles#^a7d29c]]
 
 ![[array sorting algorithms.png]]
 
-
+--- 
 
 
 
