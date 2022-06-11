@@ -1,0 +1,1 @@
+The actual time the CPU spends for computing for a specific task.

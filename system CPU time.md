@@ -1,0 +1,1 @@
+The CPU time spent in the OS performing task on behalf of the program.

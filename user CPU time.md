@@ -1,0 +1,1 @@
+The CPU time spent in a program itself.
