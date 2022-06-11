@@ -9,7 +9,7 @@ images from [[_articles#^a7d29c]]
 ![[Big-O Complexity Chart.png]]
 
 
-![[Pasted image 20220611170454.png]]
+![[array sorting algorithms.png]]
 
 
 
