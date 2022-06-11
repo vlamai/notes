@@ -65,21 +65,21 @@ func BenchmarkAppend(b *testing.B) {
 
 Go provides some tools for profiling CPU usage, but I like prefer the handy UI that Goland has:
 
-![](https://miro.medium.com/max/700/1*6A4a9bdKUB72tvd8_oVyrA.png)
+![](img/1!6A4a9bdKUB72tvd8_oVyrA.png)
 
 After analyzing the CPU profiles from multiple runs, I found out two facts. First, `growslice()` always takes more than 90% of CPU time in building up the slice, which is what we expected. Second, `memmove()` is never the most time-consuming part of `growslice()` when the size of the slice is not huge.
 
 Look at these two screenshots of CPU profiles:
 
-![](https://miro.medium.com/max/700/1*T7O24F_GJQjKhGaxGg3kKw.png)
+![](img/1!T7O24F_GJQjKhGaxGg3kKw.png)
 
-![](https://miro.medium.com/max/700/1*6Iaags4KV6e7VycCowoz_g.png)
+![](img/1!6Iaags4KV6e7VycCowoz_g.png)
 
 We can see that allocating memory for the growing slice (function `mallocgc()`) takes the majority of CPU time. The more interesting thing is that `memmove()` can take 0 CPU time in some cases (see the second screenshot). I’ll dig deeper into that when possible.
 
 We can play with the `size` and see that `memmove()` will spend a more significant part of the CPU time as `size` grows. Running the benchmark with `size = 1 << 20` ends up with the following CPU profile, where `memmove()` takes 80% of the CPU time in `growslice()`.
 
-![](https://miro.medium.com/max/700/1*LbCKYdriQImg7Mo9yHX9Fw.png)
+![](img/1!LbCKYdriQImg7Mo9yHX9Fw.png)
 
 ## How about allocating the slice size beforehand?
 
