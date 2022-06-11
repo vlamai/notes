@@ -1,4 +1,4 @@
-[[articles#^go-data-race-article-link]]
+[[_articles#^go-data-race-article-link]]
 
 [[data race]]
 ## usage 
