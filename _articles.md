@@ -13,6 +13,10 @@
 
 [[Golang The time complexity of append()  by Gary Lu  Vendasta  Medium]]  ^go-array-time-complexity
 
+[[Go language slice detailed explanation (combined with source code)  Develop Paper]]^go-slice-explain
+
+
+
 
 # obsidian
 [format notes](https://help.obsidian.md/How+to/Format+your+notes)

@@ -4,6 +4,8 @@
 # time complexity 
 ^time-complexity
 What time it cost to execute in worse case 
+
+
 symbol | description
 ---|---
 O(1)| constant
@@ -13,6 +15,7 @@ O(n log n) | linear logarithmic
 O(n^2)| quadratic
 O(2^n) | exponential 
 O(n!)| factorial
+
 
 # space complexity
 ^space-complexity

@@ -3,7 +3,7 @@ In Go, `append(slice, x)` is one of the most used built-in functions. But have y
 
 The short answer: The amortized cost of `append()` is O(1), but the worst-case cost is O(N).
 
-Before I move to the long answer, I’d like to add a disclaimer first: [The Go Programming Language Specification](https://golang.org/ref/spec) is supposed to be a single source of truth. Everything else can be treated as implementation details, which may or may not be consistent across versions, platforms, and compilers. What I’m writing here is all about those implementation details. I’m using the version of `go1.12.4 darwin/amd64` with the origin compiler `gc`.
+Before I move to the long answer, I’d like to add a disclaimer first: [[_articles#^go-lang-spe]] is supposed to be a single source of truth. Everything else can be treated as implementation details, which may or may not be consistent across versions, platforms, and compilers. What I’m writing here is all about those implementation details. I’m using the version of `go1.12.4 darwin/amd64` with the origin compiler `gc`.
 
 ## What happens when we call append()
 
