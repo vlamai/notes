@@ -15,6 +15,10 @@ Also includes:
 
 SQL based on bags (**duplicates**) not on sets
 
+**HAVING** filter results based on aggregate computation.
+
+# [[Lecture 03 - Database Storage (Part I)]] notes
+
 
 
 ------------------------------------
@@ -22,3 +26,5 @@ SQL based on bags (**duplicates**) not on sets
 
 1. query optimizer
 2. relation algebra 
+
+

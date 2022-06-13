@@ -143,14 +143,15 @@ WHERE e.sid = s.sid
 GROUP BY e.cid
 HAVING AVG (s.gpa) > 3.9;
 ```
+
 ## 5 String Operations
 
 The SQL standard says that strings are case sensitive and single-quotes only. There are functions to manipulate strings that can be used in any part of a query.
 
 Pattern Matching: The LIKE keyword is used for string matching in predicates.
 
-- “%” matches any substring (including empty).
-- “” matches any one character.
+- `%` matches any substring (including empty).
+- `_` matches any one character.
 
 Concatenation:Two vertical bars (“||”) will concatenate two or more strings together into a single string.
 
@@ -257,8 +258,8 @@ Performs “sliding” calculation across a set of tuples that are related. Like
 Functions:The window function can be any of the aggregation functions that we discussed above. There are also also special window functions:
 
 
-1.ROWNUMBER: The number of the current row.
-2.RANK: The order position of the current row.
+1. **ROWNUMBER**: The number of the current row.
+2. **RANK**: The order position of the current row.
 
 Grouping: The OVER clause specifies how to group together tuples when computing the window function. Use PARTITION BY to specify group.
 ```sql
