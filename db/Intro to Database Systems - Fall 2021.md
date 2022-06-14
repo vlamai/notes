@@ -12,12 +12,26 @@ Also includes:
 - Integrity and referential control 
 - Transactions
 
-
 SQL based on bags (**duplicates**) not on sets
 
 **HAVING** filter results based on aggregate computation.
 
 # [[Lecture 03 - Database Storage (Part I)]] notes
+
+## Storage hierarchy
+### volatile  
+Faster, smaller, expensive. Random access, byte addressable.
+- CPU registers 
+- CPU cashes
+- DRAM
+### non-volatile
+Slower, larger, cheaper. Sequential access, block addressable.
+- SSD
+- HDD
+- Network storage
+
+
+-- no sound =(
 
 
 

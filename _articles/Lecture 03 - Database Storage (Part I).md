@@ -74,11 +74,11 @@ other queries while it is waiting to get the data from disk.
 This high-level design goal is like virtual memory, where there is a large address space and a place for the
 OS to bring in pages from disk.
 
-One way to achieve this virtual memory is by usingmmapto map the contents of a file in a process’ ad-
+One way to achieve this virtual memory is by using mmapto map the contents of a file in a process’ ad-
 dress space, which makes the OS responsible for moving pages back and forth between disk and memory.
-Unfortunately, this means that ifmmaphits a page fault, the process will be blocked.
+Unfortunately, this means that if mmap hits a page fault, the process will be blocked.
 
-- You never want to usemmapin your DBMS if you need to write.
+- You never want to use mmap in your DBMS if you need to write.
 - The DBMS (almost) always wants to control things itself and can do a better job at it since it knows
     more about the data being accessed and the queries being processed.
 - The operating system is not your friend.
@@ -89,7 +89,7 @@ It is possible to use the OS by using:
 - mlock: Tells the OS to not swap memory ranges out to disk.
 - msync: Tells the OS to flush memory ranges out to disk.
 
-We do not advise usingmmapin a DBMS for correctness and performance reasons.
+We do not advise using mmap in a DBMS for correctness and performance reasons.
 
 Even though the system will have functionalities that seem like something the OS can provide, having the
 DBMS implement these procedures itself gives it better control and performance.
@@ -102,7 +102,7 @@ use a single file (e.g., SQLite).
 The OS does not know anything about the contents of these files. Only the DBMS knows how to decipher
 their contents, since it is encoded in a way specific to the DBMS.
 
-The DBMS’sstorage manageris responsible for managing a database’s files. It represents the files as a
+The DBMS’s storage manager is responsible for managing a database’s files. It represents the files as a
 collection of pages. It also keeps track of what data has been read and written to pages as well how much
 free space there is in these pages.
 
@@ -112,7 +112,7 @@ free space there is in these pages.
 
 ## 5 Database Pages
 
-The DBMS organizes the database across one or more files in fixed-size blocks of data calledpages. Pages
+The DBMS organizes the database across one or more files in fixed-size blocks of data called pages. Pages
 can contain different kinds of data (tuples, indexes, etc). Most systems will not mix these types within
 pages. Some systems will require that pages areself-contained, meaning that all the information needed to
 read each page is on the page itself.
@@ -141,10 +141,10 @@ page to disk when the system crashes.
 ## 6 Database Heap
 
 There are a couple of ways to find the location of the page a DBMS wants on the disk, and heap file
-organization is one of those ways. Aheap fileis an unordered collection of pages where tuples are stored in
+organization is one of those ways. A heap file is an unordered collection of pages where tuples are stored in
 random order.
 
-The DBMS can locate a page on disk given apageidby using a linked list of pages or a page directory.
+The DBMS can locate a page on disk given a page id by using a linked list of pages or a page directory.
 
 ```
 1.Linked List:Header page holds pointers to a list of free pages and a list of data pages. However, if
@@ -203,7 +203,7 @@ Tuple Header:Contains meta-data about the tuple.
 
 - Visibility information for the DBMS’s concurrency control protocol (i.e., information about which
     transaction created/modified that tuple).
-- Bit Map forNULLvalues.
+- Bit Map for NULL values.
 - Note that the DBMS does not need to store meta-data about the schema of the database here.
 
 Tuple Data:Actual data for attributes.
@@ -214,8 +214,8 @@ Tuple Data:Actual data for attributes.
 Unique Identifier:
 
 - Each tuple in the database is assigned a unique identifier.
-- Most common:pageid+ (offsetorslot).
-- An applicationcannotrely on these ids to mean anything.
+- Most common:pageid+ (offset or slot).
+- An application cannot rely on these ids to mean anything.
 
 Denormalized Tuple Data:If two tables are related, the DBMS can “pre-join” them, so the tables end up
 on the same page. This makes reads faster since the DBMS only has to load in one page rather than two
