@@ -15,6 +15,9 @@
 
 [[Go language slice detailed explanation (combined with source code)  Develop Paper]]^go-slice-explain
 
+[How to do Dynamic Filtering in Golang using only the Database SQL Package like in Django](https://bartlomiejmika.com/post/2021/how-to-do-dynamic-filtering-in-golang-using-only-the-database-sql-package-like-in-django)
+
+[Build dynamic (conditional) WHERE SQL query in Golang](https://stackoverflow.com/questions/52327710/build-dynamic-conditional-where-sql-query-in-golang)
 
 
 
