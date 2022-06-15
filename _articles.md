@@ -11,6 +11,9 @@
 # vim #vim
 [[Graphical vi-vim Cheat Sheet]]
 
+# git #git 
+[Pretty formats](https://git-scm.com/docs/pretty-formats)
+
 # [[_golang]]  #go
 
 [Data Race Detector](https://go.dev/doc/articles/race_detector)^go-data-race-article-link
