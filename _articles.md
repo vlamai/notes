@@ -1,9 +1,17 @@
-# [[_algorithms]]
+# [[_algorithms]] #algorithms
 [big o cheat sheet](https://www.bigocheatsheet.com/) ^big-o-cheat-sheet-site
 
 [grind 75](https://www.techinterviewhandbook.org/grind75?hours=7&weeks=21) algorithm tasks
 
-# [[_golang]]
+
+# git #git
+
+[git-add - Add file contents to the index](https://git-scm.com/docs/git-add#git-add--A) 
+
+# vim #vim
+[[Graphical vi-vim Cheat Sheet]]
+
+# [[_golang]]  #go
 
 [Data Race Detector](https://go.dev/doc/articles/race_detector)^go-data-race-article-link
 

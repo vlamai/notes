@@ -15,3 +15,9 @@
 ![[Pasted image 20220614150202.png]]
 
 ![[Pasted image 20220614150217.png]]
+
+
+
+
+
+#vim

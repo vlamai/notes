@@ -70,3 +70,4 @@ append log records to the file of how the database was modified.
 3. slotted pages
 
 
+#db #sql

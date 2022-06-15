@@ -297,3 +297,8 @@ No matter what operation of slice: copy, append, reselice and so on, new slices 
 
 1.  Deep decryption of go language slice
 2.  Go language learning notes
+
+
+
+
+#go #cs 

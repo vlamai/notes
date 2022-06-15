@@ -35,3 +35,10 @@ gc 1404     : The 1404 GC run since the program started
 // Threads
 12P         : Number of logical processors or threads used to run Goroutines
 ```
+
+
+
+
+
+
+#go

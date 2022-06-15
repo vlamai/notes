@@ -147,3 +147,7 @@ BenchmarkMake-8             1000           1209488 ns/op
 3.  If we can know the size of a slice, we should use `make()` to create the slice instead of dynamically appending to it.
 
 All of these may seem to be very simple, but I enjoyed the process of measuring and proving them. Hope you enjoyed it too!
+
+
+
+#go #array #algorithms #cs

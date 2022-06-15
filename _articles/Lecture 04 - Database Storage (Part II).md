@@ -143,3 +143,9 @@ To put the tuples back together when we are using a column store, we can use:
 Most DBMSs use fixed-length offsets.
 
 Row stores are usually better for OLTP, while column stores ar better for OLAP.
+
+
+
+
+
+#db #sql

@@ -222,7 +222,14 @@ on the same page. This makes reads faster since the DBMS only has to load in one
 separate pages. However, it makes updates more expensive since the DBMS needs more space for each
 tuple.
 
-```
-15-445/645 Database Systems
-```
 
+
+
+
+
+
+
+
+
+
+#db #sql 

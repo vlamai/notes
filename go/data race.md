@@ -12,3 +12,9 @@ $ go build -race mycmd   // to build the command
 $ go install -race mypkg // to install the package
 ```
 
+
+
+
+
+
+#go
