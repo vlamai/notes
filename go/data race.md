@@ -1,6 +1,6 @@
 [[_articles#^go-data-race-article-link]]
 
-[[cs/data race]]
+[[data race 1]]
 ## usage 
 
 ```

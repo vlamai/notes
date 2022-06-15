@@ -33,6 +33,9 @@ Slower, larger, cheaper. Sequential access, block addressable.
 
 -- no sound =(
 
+# [[Lecture 04 - Database Storage (Part II)]] notes
+
+
 
 
 ------------------------------------
