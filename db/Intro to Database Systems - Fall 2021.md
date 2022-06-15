@@ -48,9 +48,9 @@ The **header** tracks of number of used slots and offset of the starting locatio
 
 append log records to the file of how the database was modified.
 
-#PostgreSQL
 
-[EXPLAIN — show the execution plan of a statement](https://www.postgresql.org/docs/current/sql-explain.html)
+
+[EXPLAIN — show the execution plan of a statement](https://www.postgresql.org/docs/current/sql-explain.html) #PostgreSQL #sql 
 
 ````sql
 \timing [on|off]       toggle timing of commands (currently off)
