@@ -1,6 +1,8 @@
-[[_articles#^go-data-race-article-link]]
+it's occurs when two goroutines access the same variable concurrently and at least one the accesses is a write.
 
-[[data race 1]]
+> [[_articles#^go-memory-model-article-link]]  for details
+
+
 ## usage 
 
 ```
