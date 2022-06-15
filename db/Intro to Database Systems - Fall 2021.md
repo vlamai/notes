@@ -35,13 +35,31 @@ Slower, larger, cheaper. Sequential access, block addressable.
 
 # [[Lecture 04 - Database Storage (Part II)]] notes
 
+### Slotted pages 
+![[Pasted image 20220615214052.png]]
+
+
+The slot array maps **slots** to the tuples starting position 
+The **header** tracks of number of used slots and offset of the starting location of the last used slot.
+
+
+### Log structured 
+![[Pasted image 20220615214452.png]]
+
+append log records to the file of how the database was modified.
 
 
 
+
+
+
+
+\\\\\\\
 ------------------------------------
 #questions
 
 1. query optimizer
 2. relation algebra 
+3. slotted pages
 
 
