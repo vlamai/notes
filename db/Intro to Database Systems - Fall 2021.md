@@ -57,6 +57,20 @@ append log records to the file of how the database was modified.
 ````
 
 
+## n-ary storage model 
+good for #OLTP
+Advantages : 
+- Fast insert, update,delete 
+- Good for queries that need the entire tuple
+Disadvantages 
+- Not good for scanning large portions of the table 
+
+## decomposition storage model 
+ideal for #OLAP workloads
+
+column store 
+
+# [[Lecture 05 - Buffer Pools]] notes
 
 
 
@@ -68,6 +82,7 @@ append log records to the file of how the database was modified.
 1. query optimizer
 2. relation algebra 
 3. slotted pages
+4. n ary storage model (NSM)
 
 
 #db #sql
