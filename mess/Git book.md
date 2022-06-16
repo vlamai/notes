@@ -118,6 +118,17 @@ git commit -a -m 'Add new benchmarks'
 Adding the `-a` option to the `git commit` command makes Git automatically stage every file that is already tracked before doing the commit, letting you skip the `git add` part
 
 
+### Removing Files
+
+```console
+git rm PROJECTS.md
+```
+
+### Moving Files
+
+```console
+git mv file_from file_to
+```
 
 
 
@@ -125,7 +136,8 @@ Adding the `-a` option to the `git commit` command makes Git automatically s
 
 
 
-[stop here](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+
+[stop here](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
 
 
 
