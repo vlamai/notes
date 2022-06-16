@@ -79,6 +79,50 @@ git add file_name
 
 ### Ignoring Files
 
+The rules for the patterns you can put in the `.gitignore` file are as follows:
+
+-   Blank lines or lines starting with `#` are ignored.    
+-   Standard glob patterns work, and will be applied recursively throughout the entire working tree.    
+-   You can start patterns with a forward slash (`/`) to avoid recursivity.    
+-   You can end patterns with a forward slash (`/`) to specify a directory.    
+-   You can negate a pattern by starting it with an exclamation point (`!`).
+
+Glob patterns are like simplified regular expressions that shells use.
+- An asterisk (`*`) matches zero or more characters;
+- `[abc]` matches any character inside the brackets (in this case a, b, or c);
+- a question mark (`?`) matches a single character;
+- and brackets enclosing characters separated by a hyphen (`[0-9]`) matches any character between them (in this case 0 through 9)
+- use two asterisks to match nested directories; `a/**/z` would match `a/z`, `a/b/z`, `a/b/c/z`, and so on.
+
+It is also possible to have additional `.gitignore` files in subdirectories
+
+
+### Viewing Your Staged and Unstaged Changes
+
+`git status` answers those questions very generally by listing the file names,
+`git diff` shows you the exact lines added and removed — the patch, as it were.
+
+
+If you want to see what you’ve staged that will go into your next commit, you can use `git diff --staged`
+
+### Committing Your Changes
+
+```console
+git commit -m "Story 182: fix benchmarks for speed"
+```
+
+```console
+git commit -a -m 'Add new benchmarks'
+```
+
+Adding the `-a` option to the `git commit` command makes Git automatically stage every file that is already tracked before doing the commit, letting you skip the `git add` part
+
+
+
+
+
+
+
 
 
 [stop here](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
