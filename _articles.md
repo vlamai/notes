@@ -35,6 +35,6 @@
 # obsidian
 [format notes](https://help.obsidian.md/How+to/Format+your+notes)
 
-[Supported TeX/LaTeX commands](http://docs.mathjax.org/en/latest/input/tex/macros/index.html?highlight=alpha)
+[Supported TeX/LaTeX commands](http://docs.mathjax.org/en/latest/input/tex/macros/index.html?highlight=alpha) #latex
 
 
