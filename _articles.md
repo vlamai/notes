@@ -32,6 +32,14 @@
 
 [SQLBoiler is a tool to generate a Go ORM tailored to your database schema](https://github.com/volatiletech/sqlboiler) #sql
 
+[[2022-06-16#^go-context]]
+
+# system design  #system-design
+[[2022-06-16#^cluster-nodes]]
+
+# linux #linux
+[[2022-06-16#^linux-commands]]
+
 # obsidian
 [format notes](https://help.obsidian.md/How+to/Format+your+notes)
 
