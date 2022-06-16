@@ -136,8 +136,8 @@ git mv file_from file_to
 
 
 
+Stop here -> [Git - Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
 
-[stop here](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
 
 
 
