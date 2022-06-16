@@ -32,6 +32,54 @@ git <verb> --help
 git add -h
 ```
 
+# Recording Changes to the Repository
+Each file in your working directory can be in one of two states: **tracked** or **untracked**
+## Tracked 
+files are files that were in the last snapshot, as well as any newly staged files.
+States : 
+- unmodified
+- modified
+- staged
+
+## Untracked
+files are everything else
+
+![[Pasted image 20220616140727.png]]
+
+
+## Check status 
+```console
+git status
+```
+git status -s for short print 
+
+```console
+$ git status -s
+ M README
+MM Rakefile
+A  lib/git.rb
+M  lib/simplegit.rb
+?? LICENSE.txt
+```
+
+staging area have an **A**
+modified files have an **M**
+
+
+
+### Tracking New Files
+```console
+git add file_name
+```
+**git add** is a multipurpose command — you use it to : 
+ - begin tracking new files
+ - stage files
+ - do other things like marking merge-conflicted files as resolved
+
+
+### Ignoring Files
+
+
 
 [stop here](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
 
