@@ -49,7 +49,8 @@ Allocation Policies:
 
 - Global Policies:How a DBMS should make decisions for all active txns.
 - Local Policies:Allocate frames to a specific txn without considering the behavior of concurrent txns.
-- 
+
+
 ## 3 Replacement Policies
 
 A replacement policy is an algorithm that the DBMS implements that makes a decision on which pages to

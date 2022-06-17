@@ -72,8 +72,22 @@ column store
 
 # [[Lecture 05 - Buffer Pools]] notes
 
+spatial control 
+- where to write page on disk
+- paged used often together as physically close together
+temporal control 
+- when to read pages into memory and when write to disk 
+- minimize read from disk 
 
+buffer pool is array of frame, each frame can contain page 
 
+page table tack what pages are in memory. Also maintains metadata : dirty flag, pin / reference count 
+
+![[Pasted image 20220617224059.png]]
+
+dirty flag - page modified 
+
+pin reference - how many queries use page 
 
 \\\\\\\
 ------------------------------------
